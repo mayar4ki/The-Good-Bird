@@ -19,13 +19,21 @@ public class GameLogic : MonoBehaviour
     public void restartGame() {
 
         Debug.Log(SceneManager.GetActiveScene().name);
-        //await SceneManager.UnloadSceneAsync(Scenes.SampleScene);
         SceneManager.LoadScene(Scenes.SampleScene);
-
+        //await SceneManager.UnloadSceneAsync(Scenes.SampleScene);
         //SceneManager.LoadScene(SceneManager.GetActiveScene().name);
 
     }
 
+    public void pauseGame()
+    {
+        Time.timeScale = 0;
+    }
+
+    public void resumeGame()
+    {
+        Time.timeScale = 1;
+    }
 
     public void showGameOver()
     {
