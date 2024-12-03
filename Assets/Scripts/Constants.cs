@@ -8,7 +8,7 @@ static class Tags
 
 static class Scenes
 {
-    public const string StartMenuScene = "StartMenuScene";
+    public const string StartMenuScene = "StartMenu";
     public const string SampleScene = "SampleScene";
 }
 
